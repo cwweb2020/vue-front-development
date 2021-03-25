@@ -1,30 +1,68 @@
 <template>
-  <div id="nav">
-    <router-link to="/">Home</router-link> |
-    <router-link to="/about">About</router-link>
-  </div>
-  <router-view/>
+    <Navbar />
+    
+  
+    
 </template>
 
-<style lang="scss">
-#app {
-  font-family: Avenir, Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  text-align: center;
-  color: #2c3e50;
-}
+<script>
+import Navbar from './components/Navbar.vue'
+// @ is an alias to /src
+import axios from 'axios'
+import Home from './views/Home.vue'
 
-#nav {
-  padding: 30px;
 
-  a {
-    font-weight: bold;
-    color: #2c3e50;
-
-    &.router-link-exact-active {
-      color: #42b983;
+export default {
+  components: {
+    Navbar,
+    Home,
+  
+  },
+  data(){
+    return{
+       datosTarjeta: null
     }
+  },
+  created(){
+   //this.getcursos()
+     console.log('consulta base de datos');
+       axios
+         .get('https://cereales-ebbb8.firebaseio.com/cursos/curso.json')
+         .then(res =>{
+              
+             //  this.$store.state.datostraidos = res.data
+                  this.$root.datosTarjeta=res.data
+            
+             
+         })
+         .catch(e => console.log(e))
+         
+  
+
+    
+  },
+  methods:{
+
+
   }
+
+
+
 }
+</script>
+
+<style lang="scss">
+
+*{
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family:  Avenir, Helvetica, Arial, sans-serif;
+}
+.router-link-exact-active {
+      text-decoration: underline 4px solid orangered;
+    }
+    
+
+
 </style>

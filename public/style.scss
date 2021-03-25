@@ -1,0 +1,198 @@
+@import url('https://fonts.googleapis.com/css2?family=Courgette&display=swap');
+
+$colorbase : #00a0b0;
+
+body{
+    background-color: #fcfcfc;
+    overflow-x: hidden;
+}
+html{
+    overflow-x: hidden;
+}
+@mixin fbox ($jcontent,$direction){
+    display: flex;
+    justify-content: $jcontent;
+    align-items: center;
+    flex-direction: $direction;
+}
+
+
+
+@media (min-width: 1000px){
+    ._boton-hambuerguesa{
+        display: none;
+    }
+    .nav-hero{
+        display: none;
+    }
+}
+@media (max-width: 900px){ 
+    .nav{
+        position: relative;
+    }
+   ._boton-hambuerguesa{
+    font-size: 26px;
+    border: 1px solid grey;
+    padding: 8px 12px;
+    border-radius: 5px;
+    margin-left: 5%;
+   }
+
+//    menu del hero
+.nav-hero{
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: 80vw;
+    min-height: 50vh;
+    background: black;
+    z-index: 2;
+    padding:10px;
+    
+
+
+
+
+        li{
+            list-style: none;
+            margin: 2.5rem 0;
+            padding-bottom: 10px;
+            border-bottom: 1px solid grey !important;
+
+                 .__submenu{
+                     display: flex;
+                     flex-direction: column;
+                     width: 50vw;
+                     position: relative;
+                         
+                          a{
+                              color: black;
+                              margin: 9px 0;
+                          }
+                 }
+            
+                  a{
+                      color: black;
+                      font-size: 22px;
+                      font-weight: 600;
+                      color: white;
+                    //   text-decoration: none;
+                  }
+        }
+}
+
+
+
+}
+
+// --------------------------------
+@media (max-width: 490px){ 
+    ._boton-hambuerguesa{
+     font-size: 26px;
+     border: 1px solid grey;
+     padding: 8px 12px;
+     border-radius: 5px;
+     margin-left: 5%;
+    }
+ 
+ //    menu del hero
+ .nav-hero{
+     position: absolute;
+     top: 100%;
+     left: 0;
+     width: 80vw;
+     min-height: 42vh;
+     background: black;
+     z-index: 2;
+     
+ 
+ 
+ 
+ 
+         li{
+             list-style: none;
+             margin: 2.5rem 0;
+ 
+                  .__submenu{
+                      display: flex;
+                      flex-direction: column;
+                      position: relative;
+                      width: 50vw;
+                     position: relative;
+                          
+                           a{
+                               color: black;
+                               margin: 9px 0;
+                           }
+                  }
+             
+                   a{
+                       color: black;
+                       font-size: 16.1px;
+                       font-weight: 600;
+                       color: white;
+                     //   text-decoration: none;
+                   }
+         }
+ }
+ 
+ 
+ 
+ }
+ 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

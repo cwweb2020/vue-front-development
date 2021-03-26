@@ -65,6 +65,9 @@ html {
     font-weight: 600;
     color: white;
   }
+  .ms-1 {
+    color: white !important;
+  }
 }
 
 @media (max-width: 490px) {

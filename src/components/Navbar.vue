@@ -27,6 +27,7 @@
    </ul>
 </nav>
        <!-- ENCABEZADO -->
+       
          <!-- ul hero -->
  <ul class="nav-hero" v-show="openMobileMenu">
     <li class="home"><i><router-link to="/">Home</router-link> </i></li>

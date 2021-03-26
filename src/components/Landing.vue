@@ -168,7 +168,7 @@ export default {
     top: 42%;
   }
    .hero .heroLeft h2{
-        font-size: 1.6rem;
+        font-size: 1.3rem;
         padding: 11px;
         background-color: #0000009c;
     }
@@ -177,11 +177,16 @@ export default {
     }
     .hero .heroLeft ._boton{
         font-size: 18px;
-        margin: 5% 0 0 8%;
+        margin: 3% 0 0 11%;
         background-color: #2991d6;
         box-shadow: 1px 1px 4px grey;
         color: white;
         border: none;
+    }
+    .hero .heroLeft ._boton[data-v-98feeed2] {
+  
+    width: 203px;
+    height: 49px;
     }
   .hero .herowrap{
       flex-basis: 100%;
@@ -189,7 +194,44 @@ export default {
   }
   
 }
+@media (max-width: 380px){
+    nav .logo_empresa h1 {
+    font-size: 25px;
+}
+._boton-hambuerguesa {
+    font-size: 23px;
+}
+     .hero .heroLeft h2{
+        font-size: 1.2rem;
+      
+    }
+    .hero .heroLeft ._boton{
+        font-size: 16px;
+        margin: 3% 0 0 9%;
+        width: 192px;
+        height: 46px;
+    }
 
+}
+@media (max-width: 340px){
+    nav .logo_empresa h1 {
+    font-size: 25px;
+}
+._boton-hambuerguesa {
+    font-size: 23px;
+}
+     .hero .heroLeft h2{
+        font-size: 1.2rem;
+      
+    }
+    .hero .heroLeft ._boton{
+        font-size: 16px;
+        margin: 3% 0 0 4.5%;
+        width: 192px;
+        height: 46px;
+    }
+
+}
 
 </style>>
 

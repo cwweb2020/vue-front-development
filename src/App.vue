@@ -59,9 +59,9 @@ export default {
   padding: 0;
   font-family:  Avenir, Helvetica, Arial, sans-serif;
 }
-.router-link-exact-active {
+/* .router-link-exact-active {
       text-decoration: underline 4px solid orangered;
-    }
+    } */
     
 
 

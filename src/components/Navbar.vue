@@ -30,7 +30,7 @@
        
          <!-- ul hero -->
  <ul class="nav-hero" v-show="openMobileMenu">
-    <li class="home"><i><router-link to="/">Home</router-link> </i></li>
+    <li @click="openMenuMobile" class="home"><i><router-link to="/">Home</router-link> </i></li>
      <li> <a href="#" class="linkis">About</a></li>
      <li @click="openMenu" class="position-relative"> <a href="#" class="linkis">Courses</a> <span class="ms-1 _arrow ms-1"><i class="fas fa-sort-down"></i> </span>
         <!-- submenu -->
@@ -41,7 +41,7 @@
         </div>
     </li>
      <!-- <li> <a href="#" class="linkis">Pricing</a></li> -->
-     <li style="border:none;"><router-link to="/Contacto">Contact</router-link> </li>
+     <li @click="openMenuMobile" style="border:none;"><router-link to="/Contacto">Contact</router-link> </li>
    
    </ul>
         <!-- ul hero -->
